@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.demo</groupId>
+        <artifactId>demo-api</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>ac-sdk</artifactId>
+    <version>${sdk.module.version}</version>
+
+    <dependencies>
+        <!-- demo-rpc -->
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>demo-rpc</artifactId>
+            <version>${demo-rpc.module.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-codec-http</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-transport-native-epoll</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- demo-sdk -->
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>demo-sdk</artifactId>
+            <version>${demo-sdk.module.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-codec-http</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-transport-native-epoll</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- user -->
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>demo-core-user-common</artifactId>
+            <version>${demo-core-user.module.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
