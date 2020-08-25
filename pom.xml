@@ -8,7 +8,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>ac-sdk</artifactId>
+    <artifactId>demo-api-sdk</artifactId>
     <version>${sdk.module.version}</version>
 
     <dependencies>
