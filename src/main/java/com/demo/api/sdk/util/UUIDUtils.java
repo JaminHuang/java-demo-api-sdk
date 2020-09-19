@@ -4,9 +4,6 @@ import java.util.UUID;
 
 /**
  * UUID工具类
- *
- * @author jamin
- * @date 2020/9/19
  */
 public class UUIDUtils {
     private static int length = 5;
